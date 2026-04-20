@@ -67,11 +67,11 @@
 クオリティーに関する設定は[Renderer Feature](#使い方)で調整できる。
 
 * **AO Quality** (オクルージョンのクオリティー)
-   * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FOSmaxxing`)の３つの設定から選べる
+   * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FPSmaxxing`)の３つの設定から選べる
    * 設定が高いほどrayの数と各ray上のステップ数が上がるが重くなる
    * 低設定ではartifactが発生することがある
 * **Blur Quality** (ぼかしのクオリティー)
-  * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FOSmaxxing`)の３つの設定から選べる
+  * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FPSmaxxing`)の３つの設定から選べる
     * 高設定ではbilateral filterが使われる
       * 高設定を選択した場合は`Sharpness Source`という設定が有効になる
       * `Sharpness Source`は周りのピクセルのAOをぼかす時は指定したソースで同じオブジェクトだと判定した場合のみ混是る
@@ -88,7 +88,7 @@
   * `Depth + Normal`はカメラのDepth bufferとnormalを両方使う
   * 事情によっては`Depth Only`の方が軽い場合もあるが`Depth + Normal`の方を推奨する
 * **Normal Recunstruction Quality** (法線再建のクオリティー)
-  * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FOSmaxxing`)の３つの設定から選べる
+  * 高(`Absolute Cinema`)、中(`Lowkey Good`)、低(`FPSmaxxing`)の３つの設定から選べる
   * `Geometry Source`を`Depth Only`に設定した場合のみ使われる。
 * **Blur Radius** (ぼかしエフェクトの半径)
   * 単位：ピクセル
