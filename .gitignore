@@ -1,0 +1,26 @@
+# IDE related files and folders
+.vsconfig
+.idea
+.vscode
+*.DotSettings*
+
+# Auto generated files and folders
+obj
+Logs
+Temp
+Library
+.utmp
+*.csproj
+
+# Nuget local install path
+Assets/Packages*
+
+# Samples
+Assets/Samples
+
+# Unity user settings
+UserSettings
+
+# Build artifacts (for addressables/eos)
+EOSAssets
+Artifacts

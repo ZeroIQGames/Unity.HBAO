@@ -1,0 +1,33 @@
+#define UNIVERSAL_RENDER_PIPELINE
+
+#include "Packages/zeroiqgames.graphics.hbao-plus.core/Core/Runtime/Scripts/ShaderLibrary/HBAOPlusPipelineInclude.hlsl"
+#include "Packages/zeroiqgames.graphics.hbao-plus.core/Core/Runtime/Scripts/ShaderLibrary/HBAOPlusDepthDeinterleaveCompute.hlsl"
+#include "Packages/zeroiqgames.graphics.hbao-plus.core/Core/Runtime/Scripts/ShaderLibrary/HBAOPlusCoarseAOCompute.hlsl"
+#include "Packages/zeroiqgames.graphics.hbao-plus.core/Core/Runtime/Scripts/ShaderLibrary/HBAOPlusBlurCompute.hlsl"
+
+#pragma multi_compile_local _ _HBAO_PLUS_DOUBLE_DEPTH_TEXTURES
+#pragma multi_compile_local _HBAO_PLUS_EIGHT_STEPS _HBAO_PLUS_FOUR_STEPS
+#pragma multi_compile_local _HBAO_PLUS_EIGHT_DIRECTIONS _HBAO_PLUS_FOUR_DIRECTIONS
+#pragma multi_compile_local _ _HBAO_PLUS_NORMALS_IN_WORLD_SPACE
+#pragma multi_compile_local _BLUR_KERNEL_RADIUS_1 _BLUR_KERNEL_RADIUS_2 _BLUR_KERNEL_RADIUS_3 _BLUR_KERNEL_RADIUS_4
+#pragma multi_compile_local _HBAO_PLUS_BLUR_FILTER_BILATERAL _HBAO_PLUS_BLUR_FILTER_GAUSSIAN _HBAO_PLUS_BLUR_FILTER_KAWASE
+#pragma multi_compile_local _HBAO_PLUS_BLUR_SHARPNESS_FROM_DEPTH _HBAO_PLUS_BLUR_SHARPNESS_FROM_NORMAL _HBAO_PLUS_BLUR_SHARPNESS_FROM_DEPTH_NORMAL
+#pragma multi_compile_local _ _HBAO_PLUS_DEINTERLEAVED_AO_TEX_FORMAT_R8
+#pragma multi_compile_local _ _HBAO_PLUS_DEINTERLEAVED_DEPTH_TEX_FORMAT_R16
+
+// Native 16bit support
+// #pragma use_dxc // Supported only on dx12/vulkan/metal
+#pragma require Native16Bit : _SUPPORTS_NATIVE_16BIT
+
+#pragma kernel DeinterleaveDepth HBAO_PLUS_DEPTH_DEINTERLEAVE
+#pragma kernel DrawCoarseAO HBAO_PLUS_COARSE_AO_KERNEL
+
+// Run horizontal blur in line shape to since horizontal read/writes have excellent cache locality
+#pragma kernel IntermediateBlur INTERMEDIATE_BLUR_PASS BLUR_DIRECTION_HORIZONTAL HBAO_PLUS_BLUR_KERNEL GROUP_SHAPE_LINE
+
+// Run vertical blur in rectangle shape since line shape has the worst possible locality for vertical read/writes
+#pragma kernel FinalBlur FINAL_BLUR_PASS BLUR_DIRECTION_VERTICAL HBAO_PLUS_BLUR_KERNEL GROUP_SHAPE_LINE
+
+#pragma kernel CompressedDoublePassBlur COMPRESSED_DOUBLE_PASS_BLUR
+
+

@@ -1,0 +1,35 @@
+{
+    "name": "ZeroIQGames.Graphics.HBAOPlus.Core.Runtime",
+    "rootNamespace": "ZeroIQGames.Graphics.HBAOPlus.Core",
+    "references": [
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:d8b63aba1907145bea998dd612889d6b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "HBAO_PLUS_CORE_RP"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "12.0.0",
+            "define": "HBAO_PLUS_URP"
+        },
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "12.0.0",
+            "define": "HBAO_PLUS_HDRP"
+        },
+        {
+            "name": "com.unity.render-pipelines.core",
+            "expression": "12.0.0",
+            "define": "HBAO_PLUS_CORE_RP"
+        }
+    ],
+    "noEngineReferences": false
+}

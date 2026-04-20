@@ -1,0 +1,11 @@
+{
+  "name": "zeroiqgames.graphics.hbao-plus.urp",
+  "description": "HBAO plus implementation for Unity",
+  "version": "1.0.0",
+  "unity": "2023.3",
+  "displayName": "ZeroIQGames HBAO+ URP",
+  "dependencies": {
+    "com.unity.render-pipelines.core": "15.0.0",
+    "zeroiqgames.graphics.hbao-plus.core": "1.0.0"
+  }
+}
