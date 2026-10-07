@@ -201,15 +201,6 @@
         "com.unity.render-pipelines.core": "15.0.0"
       }
     },
-    "zeroiqgames.graphics.hbao-plus.hdrp": {
-      "version": "file:zeroiqgames.graphics.hbao-plus.hdrp",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.render-pipelines.core": "15.0.0",
-        "zeroiqgames.graphics.hbao-plus.core": "1.0.0"
-      }
-    },
     "zeroiqgames.graphics.hbao-plus.urp": {
       "version": "file:zeroiqgames.graphics.hbao-plus.urp",
       "depth": 0,

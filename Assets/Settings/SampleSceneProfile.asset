@@ -34,6 +34,9 @@ MonoBehaviour:
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
+  filter:
+    m_OverrideState: 0
+    m_Value: 0
   downscale:
     m_OverrideState: 0
     m_Value: 0
@@ -47,6 +50,73 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-5356601092384419953
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b955fd19d994e99ac4b7dc28280908e, type: 3}
+  m_Name: HBAOPlusVolumeComponent
+  m_EditorClassIdentifier: ZeroIQGames.Graphics.HBAOPlus.Core.Runtime::ZeroIQGames.Graphics.HBAOPlus.Core.Renderer.HBAOPlusVolumeComponent
+  active: 1
+  bEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  IntensityExponent:
+    m_OverrideState: 1
+    m_Value: 4
+  AORadius:
+    m_OverrideState: 1
+    m_Value: 0.14
+  DirectLightingStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  bBackgroundAO:
+    m_OverrideState: 0
+    m_Value: 0
+  BackgroundAOViewDepth:
+    m_OverrideState: 0
+    m_Value: 200
+  bForegroundAO:
+    m_OverrideState: 0
+    m_Value: 0
+  ForegroundAOViewDepth:
+    m_OverrideState: 0
+    m_Value: 2
+  SmallScaleAO:
+    m_OverrideState: 0
+    m_Value: 1
+  LargeScaleAO:
+    m_OverrideState: 0
+    m_Value: 1
+  Bias:
+    m_OverrideState: 0
+    m_Value: 0.25
+  bBlurEnabled:
+    m_OverrideState: 0
+    m_Value: 1
+  UniformBlurSharpness:
+    m_OverrideState: 0
+    m_Value: 2
+  bDepthDependentBlurSharpness:
+    m_OverrideState: 0
+    m_Value: 0
+  ForegroundBlurSharpness:
+    m_OverrideState: 0
+    m_Value: 2
+  ForegroundBlurViewDepth:
+    m_OverrideState: 0
+    m_Value: 2
+  BackgroundBlurSharpness:
+    m_OverrideState: 0
+    m_Value: 2
+  BackgroundBlurViewDepth:
+    m_OverrideState: 0
+    m_Value: 200
 --- !u!114 &-3357603926938260329
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -92,6 +162,7 @@ MonoBehaviour:
   - {fileID: -7893295128165547882}
   - {fileID: 7391319092446245454}
   - {fileID: -3357603926938260329}
+  - {fileID: -5356601092384419953}
 --- !u!114 &849379129802519247
 MonoBehaviour:
   m_ObjectHideFlags: 3
