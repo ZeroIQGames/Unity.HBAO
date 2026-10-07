@@ -80,3 +80,4 @@ MonoBehaviour:
   _BlurPreferredRenderPath: 3
   _RasterShader: {fileID: 4800000, guid: 76e2244e004d4e3c9748330dbbaf7d9d, type: 3}
   _ComputeShader: {fileID: 7200000, guid: c317e90cd25bfb844a77f5ac4db61eab, type: 3}
+  _bKeepScreenSpaceOcclusionVariants: 1
