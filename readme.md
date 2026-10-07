@@ -26,7 +26,7 @@ You can install the library using any of the following methods.
 
 #### URP
 * English documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.urp/~Documentation/HBAO-URP-Documentation-En.md).
-* Japansese documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.urp/~Documentation/HBAO-URP-Documentation-Jp.md).
+* Japanese documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.urp/~Documentation/HBAO-URP-Documentation-Jp.md).
 
 ## License
 
