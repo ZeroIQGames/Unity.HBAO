@@ -96,7 +96,7 @@
   * コストはピクセル数と線形的に上がる
   * ２Pixelはコスパが一番高い
 * **Use Surface Slope For Depth Sharpness**
-  *
+  * 有効にすると、HBAO+はぼかしのエッジ計算に表面の傾きを使う
 * **Use Per Frame Random Jitter** (フレームごとにjitterをランダム化)
   * チェックを入れるとフレームごとにrayの方向が変わる
   * Temporalエフェクト（TAA等）を使う場合はbanding artifact等が減少する
