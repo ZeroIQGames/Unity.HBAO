@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine.Rendering.Universal;
 using ZeroIQGames.Graphics.HBAOPlus.Core.Renderer;
 
@@ -138,6 +139,18 @@ namespace ZeroIQGames.Graphics.HBAOPlus.URP.Renderer
         /// Default path to the compute shader for HBAO+
         /// </summary>
         private const string _COMPUTE_SHADER_PATH = "Packages/zeroiqgames.graphics.hbao-plus.urp/URP/Runtime/Scripts/Shaders/HBAOPlusURP.compute";
+
+        /// <summary>
+        /// Build-time carrier for the keyword filter rule below. Keeps the <c>_SCREEN_SPACE_OCCLUSION</c> shader variants in the build, which URP otherwise removes while no stock SSAO feature is active.
+        /// </summary>
+        /// <remarks>Not a user setting. The rule only applies because this is a serialized field, part of the render pipeline asset's type tree.</remarks>
+        [UsedImplicitly] // Used by shader prefilter
+#if UNITY_EDITOR
+        [UnityEditor.ShaderKeywordFilter.SelectIf(true, overridePriority: true, keywordNames: new [] { "", ShaderKeywordStrings.ScreenSpaceOcclusion })]
+#endif
+        [SerializeField]
+        [HideInInspector] // Build-time only; not a user setting.
+        private bool _bKeepScreenSpaceOcclusionVariants = true;
 
 #if !UNITY_EDITOR // Use Create() for editor validation
         /// <summary>

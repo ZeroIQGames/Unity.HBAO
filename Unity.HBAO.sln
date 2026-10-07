@@ -105,6 +105,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Utilities
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualScripting.Shared.Editor", "Unity.VisualScripting.Shared.Editor.csproj", "{b357ea3e-6fd8-d3d6-adf9-4ad1019957c3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroIQGames.Graphics.HBAOPlus.URP.Editor", "ZeroIQGames.Graphics.HBAOPlus.URP.Editor.csproj", "{b429bf61-2c6f-51e9-0a47-f16af45388bb}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.CollabProxy.Editor", "Unity.CollabProxy.Editor.csproj", "{6c08dad9-100e-9b91-75f9-567e55211a7d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipeline.Universal.ShaderLibrary", "Unity.RenderPipeline.Universal.ShaderLibrary.csproj", "{d0dd762d-6c4c-092d-feb4-b1491343e945}"
@@ -296,6 +298,8 @@ Global
 		{4d5e7105-24e0-4357-959b-c7ef26240f2a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b357ea3e-6fd8-d3d6-adf9-4ad1019957c3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b357ea3e-6fd8-d3d6-adf9-4ad1019957c3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b429bf61-2c6f-51e9-0a47-f16af45388bb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b429bf61-2c6f-51e9-0a47-f16af45388bb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6c08dad9-100e-9b91-75f9-567e55211a7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6c08dad9-100e-9b91-75f9-567e55211a7d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d0dd762d-6c4c-092d-feb4-b1491343e945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -342,6 +342,9 @@ MonoBehaviour:
   skyOcclusionIntensityMultiplier:
     m_OverrideState: 1
     m_Value: 1
+  worldOffset:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &-1216621516061285780
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -374,6 +377,9 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 0
+  filter:
     m_OverrideState: 1
     m_Value: 0
   downscale:
@@ -462,8 +468,7 @@ MonoBehaviour:
   - {fileID: -6288072647309666549}
   - {fileID: 7518938298396184218}
   - {fileID: -1410297666881709256}
-  - {fileID: -7750755424749557576}
-  - {fileID: -5139089513906902183}
+  - {fileID: 2723450193823334185}
 --- !u!114 &853819529557874667
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -774,6 +779,73 @@ MonoBehaviour:
   contribution:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &2723450193823334185
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b955fd19d994e99ac4b7dc28280908e, type: 3}
+  m_Name: HBAOPlusVolumeComponent
+  m_EditorClassIdentifier: ZeroIQGames.Graphics.HBAOPlus.Core.Runtime::ZeroIQGames.Graphics.HBAOPlus.Core.Renderer.HBAOPlusVolumeComponent
+  active: 1
+  bEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  IntensityExponent:
+    m_OverrideState: 1
+    m_Value: 1.5
+  AORadius:
+    m_OverrideState: 1
+    m_Value: 0.3
+  DirectLightingStrength:
+    m_OverrideState: 1
+    m_Value: 0.5
+  bBackgroundAO:
+    m_OverrideState: 1
+    m_Value: 0
+  BackgroundAOViewDepth:
+    m_OverrideState: 1
+    m_Value: 200
+  bForegroundAO:
+    m_OverrideState: 1
+    m_Value: 0
+  ForegroundAOViewDepth:
+    m_OverrideState: 1
+    m_Value: 2
+  SmallScaleAO:
+    m_OverrideState: 1
+    m_Value: 1
+  LargeScaleAO:
+    m_OverrideState: 1
+    m_Value: 1
+  Bias:
+    m_OverrideState: 1
+    m_Value: 0.25
+  bBlurEnabled:
+    m_OverrideState: 1
+    m_Value: 1
+  UniformBlurSharpness:
+    m_OverrideState: 1
+    m_Value: 2
+  bDepthDependentBlurSharpness:
+    m_OverrideState: 1
+    m_Value: 0
+  ForegroundBlurSharpness:
+    m_OverrideState: 1
+    m_Value: 2
+  ForegroundBlurViewDepth:
+    m_OverrideState: 1
+    m_Value: 2
+  BackgroundBlurSharpness:
+    m_OverrideState: 1
+    m_Value: 2
+  BackgroundBlurViewDepth:
+    m_OverrideState: 1
+    m_Value: 200
 --- !u!114 &3959858460715838825
 MonoBehaviour:
   m_ObjectHideFlags: 3
