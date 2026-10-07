@@ -153,8 +153,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Unive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections.DocCodeSamples", "Unity.Collections.DocCodeSamples.csproj", "{fcd25eaa-6347-c7ce-b785-0b458f9d8970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroIQGames.Graphics.HBAOPlus.HDRP.Runtime", "ZeroIQGames.Graphics.HBAOPlus.HDRP.Runtime.csproj", "{7128ea84-ac4c-e5dd-0ff2-8f4240836813}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Searcher.EditorTests", "Unity.Searcher.EditorTests.csproj", "{c62dd1d4-8e1e-52ae-0a0f-765a106eaab1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections.PerformanceTests", "Unity.Collections.PerformanceTests.csproj", "{e048b8df-ff39-12c2-5534-018ad356fa7e}"
@@ -346,8 +344,6 @@ Global
 		{b821b43d-1d90-9891-1637-77358b50b5c8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{fcd25eaa-6347-c7ce-b785-0b458f9d8970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{fcd25eaa-6347-c7ce-b785-0b458f9d8970}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7128ea84-ac4c-e5dd-0ff2-8f4240836813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7128ea84-ac4c-e5dd-0ff2-8f4240836813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c62dd1d4-8e1e-52ae-0a0f-765a106eaab1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c62dd1d4-8e1e-52ae-0a0f-765a106eaab1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e048b8df-ff39-12c2-5534-018ad356fa7e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

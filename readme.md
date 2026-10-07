@@ -1,6 +1,6 @@
 # UNITY HBAO+
 
-This library implements Nvidia HBAO+ in unity, currently compatible with URP with HDRP compatibility being under development.
+This library implements Nvidia HBAO+ in unity, currently compatible with URP.
 
 ## Installation
 
@@ -19,7 +19,7 @@ You can install the library using any of the following methods.
     * Inside Unity editor, open Window -> Package Manager
     * Select `Add package from git URL...`
     * Use `https://github.com/ZeroIQGames/Unity.HBAO.git?path=Packages/zeroiqgames.graphics.hbao-plus.core`
-    * Repeat the above and use `https://github.com/ZeroIQGames/Unity.HBAO.git?path=Packages/zeroiqgames.graphics.hbao-plus.urp` if you are using URP or use `https://github.com/ZeroIQGames/Unity.HBAO.git?path=Packages/zeroiqgames.graphics.hbao-plus.hdrp` if you are using HDRP (under development)
+    * Repeat the above and use `https://github.com/ZeroIQGames/Unity.HBAO.git?path=Packages/zeroiqgames.graphics.hbao-plus.urp` if you are using URP
     * Optionally, you can add `#<Version Tag>` without the diamond brackets `<>` to the end of above URLs to install a specific version of the library
 
 ## Documentation
@@ -27,10 +27,6 @@ You can install the library using any of the following methods.
 #### URP
 * English documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.urp/~Documentation/HBAO-URP-Documentation-En.md).
 * Japansese documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.urp/~Documentation/HBAO-URP-Documentation-Jp.md).
-
-#### HDRP
-* English documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.hdrp/~Documentation/HBAO-HDRP-Documentation-En.md).
-* Japansese documentation is available [here](Packages/zeroiqgames.graphics.hbao-plus.hdrp/~Documentation/HBAO-HDRP-Documentation-Jp.md).
 
 ## License
 

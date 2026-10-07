@@ -21,11 +21,6 @@
             "define": "HBAO_PLUS_URP"
         },
         {
-            "name": "com.unity.render-pipelines.high-definition",
-            "expression": "12.0.0",
-            "define": "HBAO_PLUS_HDRP"
-        },
-        {
             "name": "com.unity.render-pipelines.core",
             "expression": "12.0.0",
             "define": "HBAO_PLUS_CORE_RP"
